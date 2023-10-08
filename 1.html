@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function fun1()
+        {
+            var a=[document.getElementById("o1").innerHTML,document.getElementById("o2").innerHTML,
+            document.getElementById("o3").innerHTML,document.getElementById("o4").innerHTML,
+            document.getElementById("o5").innerHTML,document.getElementById("o6").innerHTML,
+            document.getElementById("o7").innerHTML,document.getElementById("o8").innerHTML,
+            document.getElementById("o9").innerHTML,document.getElementById("o10").innerHTML,
+            document.getElementById("o11").innerHTML,document.getElementById("o12").innerHTML,
+            document.getElementById("o13").innerHTML,document.getElementById("o14").innerHTML,
+            document.getElementById("o15").innerHTML,document.getElementById("o16").innerHTML];
+            var i;
+            document.getElementById("o10").innerHTML="  ";
+            for(i=0;i<16;i++)
+            {
+                if(a[i]=="  "){
+                // alert(i);
+                break;
+                }
+            }
+            if((i+1)%4==0)
+            { ;}
+            else{
+            if(i==9 || i==10)
+            {
+                a[i+1]="  ";
+            }
+            else{
+            var b=a[i];
+            a[i]=a[i+1];
+            a[i+1]=b;
+            }
+            }
+            // document.getElementById("o10").innerHTML=a[i];
+            document.getElementById("o1").innerHTML=a[0];
+            document.getElementById("o2").innerHTML=a[1];
+            document.getElementById("o3").innerHTML=a[2],document.getElementById("o4").innerHTML=a[3],
+            document.getElementById("o5").innerHTML=a[4],document.getElementById("o6").innerHTML=a[5],
+            document.getElementById("o8").innerHTML=a[7],
+            document.getElementById("o9").innerHTML=a[8],document.getElementById("o10").innerHTML=a[9],
+            document.getElementById("o11").innerHTM=a[10],document.getElementById("o12").innerHTML=a[11],
+            document.getElementById("o13").innerHTML=a[12],document.getElementById("o14").innerHTML=a[13],
+            document.getElementById("o15").innerHTML=a[14],document.getElementById("o16").innerHTML=a[15];
+        }
+        function fun2()
+        {
+            var a=[document.getElementById("o1").innerHTML,document.getElementById("o2").innerHTML,
+            document.getElementById("o3").innerHTML,document.getElementById("o4").innerHTML,
+            document.getElementById("o5").innerHTML,document.getElementById("o6").innerHTML,
+            document.getElementById("o7").innerHTML,document.getElementById("o8").innerHTML,
+            document.getElementById("o9").innerHTML,document.getElementById("o10").innerHTML,
+            document.getElementById("o11").innerHTML,document.getElementById("o12").innerHTML,
+            document.getElementById("o13").innerHTML,document.getElementById("o14").innerHTML,
+            document.getElementById("o15").innerHTML,document.getElementById("o16").innerHTML];
+            var i;
+            for(i=0;i<16;i++)
+            {
+                if(a[i]=="  "){
+                // alert(i);
+                break;
+                }
+            }
+            if(i+4<=15){
+            var b=a[i];
+            a[i]=a[i+4];
+            a[i+4]=b;
+            }
+            document.getElementById("o1").innerHTML=a[0];
+            document.getElementById("o2").innerHTML=a[1];
+            document.getElementById("o3").innerHTML=a[2],document.getElementById("o4").innerHTML=a[3],
+            document.getElementById("o5").innerHTML=a[4],document.getElementById("o6").innerHTML=a[5],
+            document.getElementById("o7").innerHTML=a[6],document.getElementById("o8").innerHTML=a[7],
+            document.getElementById("o9").innerHTML=a[8],document.getElementById("o10").innerHTML=a[9],
+            document.getElementById("o11").innerHTM=a[10],document.getElementById("o12").innerHTML=a[11],
+            document.getElementById("o13").innerHTML=a[12],document.getElementById("o14").innerHTML=a[13],
+            document.getElementById("o15").innerHTML=a[14],document.getElementById("o16").innerHTML=a[15];
+        }
+        function fun3()
+        {
+            var a=[document.getElementById("o1").innerHTML,document.getElementById("o2").innerHTML,
+            document.getElementById("o3").innerHTML,document.getElementById("o4").innerHTML,
+            document.getElementById("o5").innerHTML,document.getElementById("o6").innerHTML,
+            document.getElementById("o7").innerHTML,document.getElementById("o8").innerHTML,
+            document.getElementById("o9").innerHTML,document.getElementById("o10").innerHTML,
+            document.getElementById("o11").innerHTML,document.getElementById("o12").innerHTML,
+            document.getElementById("o13").innerHTML,document.getElementById("o14").innerHTML,
+            document.getElementById("o15").innerHTML,document.getElementById("o16").innerHTML];
+            var i;
+            for(i=0;i<16;i++)
+            {
+                if(a[i]=="  "){
+                // alert(i);
+                break;
+                }
+            }
+            if(i-4>=0){
+            var b=a[i];
+            a[i]=a[i-4];
+            a[i-4]=b;
+            }
+            // document.getElementById("o10").innerHTML=a[i];
+            document.getElementById("o1").innerHTML=a[0];
+            document.getElementById("o2").innerHTML=a[1];
+            document.getElementById("o3").innerHTML=a[2],document.getElementById("o4").innerHTML=a[3],
+            document.getElementById("o5").innerHTML=a[4],document.getElementById("o6").innerHTML=a[5],
+            document.getElementById("o7").innerHTML=a[6],document.getElementById("o8").innerHTML=a[7],
+            document.getElementById("o9").innerHTML=a[8],document.getElementById("o10").innerHTML=a[9],
+            document.getElementById("o11").innerHTM=a[10],document.getElementById("o12").innerHTML=a[11],
+            document.getElementById("o13").innerHTML=a[12],document.getElementById("o14").innerHTML=a[13],
+            document.getElementById("o15").innerHTML=a[14],document.getElementById("o16").innerHTML=a[15];
+        }
+        function fun4()
+        {
+            var a=[document.getElementById("o1").innerHTML,document.getElementById("o2").innerHTML,
+            document.getElementById("o3").innerHTML,document.getElementById("o4").innerHTML,
+            document.getElementById("o5").innerHTML,document.getElementById("o6").innerHTML,
+            document.getElementById("o7").innerHTML,document.getElementById("o8").innerHTML,
+            document.getElementById("o9").innerHTML,document.getElementById("o10").innerHTML,
+            document.getElementById("o11").innerHTML,document.getElementById("o12").innerHTML,
+            document.getElementById("o13").innerHTML,document.getElementById("o14").innerHTML,
+            document.getElementById("o15").innerHTML,document.getElementById("o16").innerHTML];
+            var i;
+            for(i=0;i<16;i++)
+            {
+                if(a[i]=="  "){
+                // alert(i);
+                break;
+                }
+            }
+            if(i%4==0)
+            { ;}
+            else{
+            var b=a[i];
+            a[i]=a[i-1];
+            a[i-1]=b;
+            }
+            // document.getElementById("o10").innerHTML=a[i];
+            document.getElementById("o1").innerHTML=a[0];
+            document.getElementById("o2").innerHTML=a[1];
+            document.getElementById("o3").innerHTML=a[2],document.getElementById("o4").innerHTML=a[3],
+            document.getElementById("o5").innerHTML=a[4],document.getElementById("o6").innerHTML=a[5],
+            document.getElementById("o7").innerHTML=a[6],document.getElementById("o8").innerHTML=a[7],
+            document.getElementById("o9").innerHTML=a[8],document.getElementById("o10").innerHTML=a[9],
+            document.getElementById("o11").innerHTM=a[10],document.getElementById("o12").innerHTML=a[11],
+            document.getElementById("o13").innerHTML=a[12],document.getElementById("o14").innerHTML=a[13],
+            document.getElementById("o15").innerHTML=a[14],document.getElementById("o16").innerHTML=a[15];
+        }
+    </script>
+</head>
+<body></body>
+    <!-- <p id="o10"></p><br> -->
+    <table align="center" border="1" cellspacing="0" cellpadding="10">
+        <tr>
+            <td id="o1">02</td>
+            <td id="o2">09</td>
+            <td id="o3">04</td>
+            <td id="o4">01</td>
+        </tr>
+        <tr>
+            <td id="o5">05</td>
+            <td id="o6">11</td>
+            <td id="o7">13</td>
+            <td id="o8">10</td>
+        </tr>
+        <tr>
+            <td id="o9">14</td>
+            <td id="o10">  </td>
+            <td id="o11">07</td>
+            <td id="o12">08</td>
+        </tr>
+        <tr>
+            <td id="o13">03</td>
+            <td id="o14">15</td>
+            <td id="o15">06</td>
+            <td id="o16">12</td>
+        </tr>
+    </table><br><br>
+    <div align="center">
+    <button onclick="fun1()">←</button>
+    <button onclick="fun2()">↑</button>
+    <button onclick="fun3()">↓</button>
+    <button onclick="fun4()">→</button>
+    </div>
+</body>
+</html>
